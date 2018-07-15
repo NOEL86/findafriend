@@ -16,7 +16,7 @@ app.get('/app/public/survey', function (req, res) {
 })
 
 
-var friends = [
+var friend = [
     {
         "name": "Keith Urban",
         "photo": "http://www.soundslikenashville.com/wp-content/uploads/2017/01/Keith-Urban-1484073384.jpg",
