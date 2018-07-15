@@ -1,0 +1,16 @@
+#home {
+background-color: lightgray;
+}
+
+#infoLinks {
+   padding-right: 8px;
+    border-right: rgb(12, 102, 133) 1px solid ;
+}
+
+#survey {
+    background-color: rgb(191, 240, 240);
+}
+
+#submit {
+    background-color: rgb(218, 181, 20) !important;
+}
