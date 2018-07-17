@@ -389,26 +389,29 @@
     </div>
 
     <script type="text/javascript">
-        $("#submit").on(click, function () {
+        $("#submit").on("click", function () {
             event.preventDefault();
 
-            var friendName = $("#name").val().trim()
-            var friendImage = $("#basic-url").val().trim();
-            var q1 = $("#one").val().trim();
-            var q2 = $("#two").val().trim();
-            var q3 = $("#three").val().trim();
-            var q4 = $("#four").val().trim();
-            var q5 = $("#five").val().trim();
-            var q6 = $("#six").val().trim();
-            var q7 = $("#seven").val().trim();
-            var q8 = $("#eight").val().trim();
-            var q9 = $("#nine").val().trim();
-            var q10 = $("#ten").val().trim();
-
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#basic-url").val().trim(),
+                scores: [
+                    $("#one").val().trim(),
+                    $("#two").val().trim(),
+                    $("#three").val().trim(),
+                    $("#four").val().trim(),
+                    $("#five").val().trim(),
+                    $("#six").val().trim(),
+                    $("#seven").val().trim(),
+                    $("#eight").val().trim(),
+                    $("#nine").val().trim(),
+                    $("#ten").val().trim(),
+                ]
+            }
             //once you take the values of the response from the user
             //create a function to send the values to be checked against
             //friends already created to determine compatability scores
-
+            console.log(newFriend);
 
         })
 
@@ -418,28 +421,6 @@
 
 
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
 
 </body>
 
