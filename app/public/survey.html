@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="pretty.css" />
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
-    <script src="/app/data/friends.js"></script>
-
 </head>
 
 <body id="survey">
@@ -305,7 +303,6 @@
                             <a class="dropdown-item">3</a>
                             <a class="dropdown-item">4</a>
                             <a class="dropdown-item">5 (Strongly Agree)</a>
-                            <div role="separator" class="dropdown-divider"></div>
                         </div>
                     </div>
                 </div>
@@ -337,7 +334,6 @@
                             <a class="dropdown-item">3</a>
                             <a class="dropdown-item">4</a>
                             <a class="dropdown-item">5 (Strongly Agree)</a>
-                            <div role="separator" class="dropdown-divider"></div>
                         </div>
                     </div>
                 </div>
@@ -382,7 +378,7 @@
         <br>
         <!-- **// API Friends should be the information on friends already entered in JSON format on screen.// -->
         <p>
-            <a href="/api/friends">API Friends List</a>
+            <a href="/api/friends">API Friend List</a>
             <a href="https://github.com/NOEL86/findafriend">GitHub Repo</a>
         </p>
 
@@ -405,7 +401,7 @@
                     $("#seven").val().trim(),
                     $("#eight").val().trim(),
                     $("#nine").val().trim(),
-                    $("#ten").val().trim(),
+                    $("#ten").val().trim()
                 ]
             }
             //once you take the values of the response from the user
@@ -414,10 +410,6 @@
             console.log(newFriend);
 
         })
-
-
-
-
 
 
     </script>

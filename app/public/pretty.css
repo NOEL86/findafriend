@@ -14,3 +14,7 @@ background-color: lightgray;
 #submit {
     background-color: rgb(218, 181, 20) !important;
 }
+
+.dropdown-item {
+    display: block !important;
+}
