@@ -6,17 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Find A Friend Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="pretty.css" />
-
+    <script src="/app/routing/apiRoutes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body id="survey">
     <div class="container">
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Friend with the Closest Match</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-md-12">
@@ -56,132 +78,134 @@
         <br>
 
         <div class="row">
-            <h3>
-                <strong>Question 1</strong>
-            </h3>
-            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-            <select class="chosen-select" id="q0">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
+            <div class="col-md-12">
+                <h3>
+                    <strong>Question 1</strong>
+                </h3>
+                <h4>You describe yourself as adventurous.</h4>
+                <select class="chosen-select" id="q0">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
 
-            <h3>
-                <strong>Question 1</strong>
-            </h3>
-            <h4>you really like game of thrones.</h4>
-            <select class="chosen-select" id="q1">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3>
-                <strong>Question 1</strong>
-            </h3>
-            <h4>you really like game of thrones.</h4>
-            <select class="chosen-select" id="q2">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3>
-                <strong>Question 1</strong>
-            </h3>
-            <h4>you really like game of thrones.</h4>
-            <select class="chosen-select" id="q3">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3>
-                <strong>Question 1</strong>
-            </h3>
-            <h4>you really like game of thrones.</h4>
-            <select class="chosen-select" id="q4">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3>
-                <strong>Question 1</strong>
-            </h3>
-            <h4>you really like game of thrones.</h4>
-            <select class="chosen-select" id="q5">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3>
-                <strong>Question 1</strong>
-            </h3>
-            <h4>you really like game of thrones.</h4>
-            <select class="chosen-select" id="q6">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3>
-                <strong>Question 1</strong>
-            </h3>
-            <h4>you really like game of thrones.</h4>
-            <select class="chosen-select" id="q7">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3>
-                <strong>Question 1</strong>
-            </h3>
-            <h4>you really like game of thrones.</h4>
-            <select class="chosen-select" id="q8">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3>
-                <strong>Question 1</strong>
-            </h3>
-            <h4>you really like game of thrones.</h4>
-            <select class="chosen-select" id="q9">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
+                <h3>
+                    <strong>Question 2</strong>
+                </h3>
+                <h4>You really like Game of Thrones.</h4>
+                <select class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h3>
+                    <strong>Question 3</strong>
+                </h3>
+                <h4>You enjoy reading.</h4>
+                <select class="chosen-select" id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h3>
+                    <strong>Question 4</strong>
+                </h3>
+                <h4>Action movies are your thing.</h4>
+                <select class="chosen-select" id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h3>
+                    <strong>Question 5</strong>
+                </h3>
+                <h4>You like to travel.</h4>
+                <select class="chosen-select" id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h3>
+                    <strong>Question 6</strong>
+                </h3>
+                <h4>You like superhero movies.</h4>
+                <select class="chosen-select" id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h3>
+                    <strong>Question 7</strong>
+                </h3>
+                <h4>Hiking is your thing.</h4>
+                <select class="chosen-select" id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h3>
+                    <strong>Question 8</strong>
+                </h3>
+                <h4>You love to cook.</h4>
+                <select class="chosen-select" id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h3>
+                    <strong>Question 9</strong>
+                </h3>
+                <h4>Music is your life.</h4>
+                <select class="chosen-select" id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h3>
+                    <strong>Question 10</strong>
+                </h3>
+                <h4>Coffee is the juice of the gods.</h4>
+                <select class="chosen-select" id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
 
         </div>
         <br>
         <br>
-        <button id="submit" type="button" class="btn btn-secondary btn-lg">Submit</button>
+        <button id="submit" type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
         <br>
         <br>
         <!-- **// API Friends should be the information on friends already entered in JSON format on screen.// -->
@@ -193,6 +217,7 @@
     </div>
 
     <script type="text/javascript">
+
         $("#submit").on("click", function () {
             event.preventDefault();
 
@@ -217,14 +242,43 @@
                 url: '/api/friends',
                 data: newFriend
             }).then(function (friendData) {
-                console.log(friendData);
-            })
+
+                console.log("Click function is running");
+                $("#name").val('');
+                $("#basic-url").val('');
+                $("#q0").val('');
+                $("#q1").val('');
+                $("#q2").val('');
+                $("#q3").val('');
+                $("#q4").val('');
+                $("#q5").val('');
+                $("#q6").val('');
+                $("#q7").val('');
+                $("#q8").val('');
+                $("#q9").val('');
+
+
+                console.log(friendData + "this is running");
+
+            });
             //once you take the values of the response from the user
             //add the new friend to the array 
             //create a function to send the values to be checked against
             //friends already created to determine compatability scores
 
-        })
+            $.ajax({
+                method: 'GET',
+                url: '/routes/apiRoutes',
+
+            }).then(function (bestMatch) {
+                if (err) throw err;
+
+                $('.modal-body').append(bestMatch.name);
+                console.log('this is being used');
+            })
+
+
+        });
 
 
     </script>

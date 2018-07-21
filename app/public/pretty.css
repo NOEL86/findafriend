@@ -1,3 +1,7 @@
+* {
+    font-family: 'Chela One', cursive;
+}
+
 #home {
 background-color: lightgray;
 }
@@ -13,6 +17,7 @@ background-color: lightgray;
 
 #submit {
     background-color: rgb(218, 181, 20) !important;
+    width: 500px !important; 
 }
 
 .dropdown-item {
