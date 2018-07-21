@@ -5,14 +5,13 @@ module.exports = function (app) {
     app.get('/api/friends', function (req, res) {
         console.log("This is reading my api friends route!")
         res.json(friendsData);
-    })
+    });
 
     app.post('/api/friends', function (req, res) {
 
-
         // We will use this object to hold the "best match". We will constantly update it as we
         // loop through all of the options
-        // console.log(req.body);
+        console.log(req.body);
         var bestMatch = {
             name: "",
             photo: "",
@@ -27,14 +26,14 @@ module.exports = function (app) {
         // each user in the database
         var totalDifference;
 
-        // Here we loop through all database.
+        // Here we loop through all the friend possibilities in the database.
         for (var i = 0; i < friendsData.length; i++) {
             var currentFriend = friendsData[i];
             totalDifference = 0;
 
-            console.log(currentFriend.name);
+            console.log(`${currentFriend.name}this is the currentfriend name`);
 
-            // We then loop through all the scores of each friend in database
+            // We then loop through all the scores of each friend
             for (var j = 0; j < currentFriend.scores.length; j++) {
                 var currentFriendScore = currentFriend.scores[j];
                 var currentUserScore = userScores[j];
@@ -52,14 +51,15 @@ module.exports = function (app) {
             }
         }
 
-
+        // Finally save the user's data to the database (this has to happen AFTER the check. otherwise,
+        // the database will always return that the user is the user's best friend).
         friendsData.push(userData);
 
         // Return a JSON with the user's bestMatch. This will be used by the HTML in the next page
-        console.log(bestMatch.name + " I'm on the back end");
 
+        console.log("this is the best match data");
         res.json(bestMatch);
-    })
 
+    });
 
-}
+};

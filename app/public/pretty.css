@@ -23,3 +23,9 @@ background-color: lightgray;
 .dropdown-item {
     display: block !important;
 }
+
+#matchPhoto {
+height: 350px;
+width: 250px;
+
+}
